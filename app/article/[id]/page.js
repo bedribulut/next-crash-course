@@ -1,8 +1,13 @@
-import React from 'react'
+'use client';
 
-function Article() {
+import { useParams } from 'next/navigation'
+
+function Article({params: {id} }) {
+
+  const params = useParams();
+
   return (
-    <div>article</div>
+    <div>{id}</div>
   )
 }
 

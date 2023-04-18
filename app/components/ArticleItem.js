@@ -1,7 +1,9 @@
 import Link from "next/link"
 import styles from "../styles/article.module.css"
+import { useParams } from 'next/navigation'
 
 function ArticleItem({article}) {
+
   return (
     <div className={styles.card}>
         <Link href={`/article/${article.id}`}>
